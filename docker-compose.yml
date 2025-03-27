@@ -29,6 +29,12 @@ services:
     labels:
       org.label-schema.group: "monitoring"
 
+  # tplink_plug_exporter:
+  #   image: fffonion/tplink-plug-exporter
+  #   container_name: tplink_plug_exporter
+  #   ports:
+  #     - "9233:9233"
+
   alertmanager:
     image: prom/alertmanager:v0.28.0
     container_name: alertmanager
